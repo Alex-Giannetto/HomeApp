@@ -1,0 +1,9 @@
+"roomplan_title" = "Create your home";
+"roomplan_description" = "Scan your home by pointing the camera at all surfaces.";
+"roomplan_action_start" = "Start";
+"roomplan_action_save" = "Save";
+
+"privacy_camera_usage_description" = "Access to the camera to scan your home";
+
+"cancel" = "Cancel";
+"done" = "Done";

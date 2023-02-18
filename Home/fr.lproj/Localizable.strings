@@ -1,0 +1,9 @@
+"roomplan_title" = "Créer votre maison";
+"roomplan_description" = "Scannez votre maison en pointant la caméra sur toutes les surfaces.";
+"roomplan_action_start" = "Démarrer";
+"roomplan_action_save" = "Sauvegarder";
+
+"privacy_camera_usage_description" = "Accès à la caméra utilisé pour scanner votre maison";
+
+"cancel" = "Annuler";
+"done" = "Fait";

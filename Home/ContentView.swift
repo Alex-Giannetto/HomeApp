@@ -8,19 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("home_usdz_path") var homeUSDZPath: String?
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world! from Alex")
+            if homeUSDZPath != nil {
+                Text("You have your home already scanned")
+            } else {
+                RoomPlanView()
+            }
         }
-        .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+                .preferredColorScheme(.dark)
+                .environment(\.locale, Locale(identifier: "fr"))
+            
+            
+            ContentView()
+                .environment(\.locale, Locale(identifier: "en"))
+        }
     }
 }
