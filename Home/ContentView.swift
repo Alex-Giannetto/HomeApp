@@ -14,8 +14,9 @@ struct ContentView: View {
         VStack {
             if homeUSDZPath != nil {
                 Text("You have your home already scanned")
-            } else {
                 RoomPlanView()
+            } else {
+                AuthentificationView()
             }
         }
     }

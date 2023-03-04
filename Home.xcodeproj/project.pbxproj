@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		222EAB1629AC0765009FC431 /* LoadingModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222EAB1529AC0765009FC431 /* LoadingModifier.swift */; };
+		2233402829A9161A005BEF69 /* TextAnimationViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233402729A9161A005BEF69 /* TextAnimationViewModifier.swift */; };
+		229D04C229A8F38800276D5A /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229D04C129A8F38800276D5A /* RegisterView.swift */; };
+		22ABE52929A2D02700986EB0 /* AnimatedBlobComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ABE52829A2D02700986EB0 /* AnimatedBlobComponent.swift */; };
+		22ABE52B29A67B6D00986EB0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ABE52A29A67B6D00986EB0 /* LoginView.swift */; };
+		22CEC16F29A7F74300FE1B7E /* Color+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CEC16B29A7F74300FE1B7E /* Color+extension.swift */; };
+		22CEC17029A7F74300FE1B7E /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CEC16C29A7F74300FE1B7E /* View+Extension.swift */; };
+		22CEC17229A7F90500FE1B7E /* InputComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CEC17129A7F90500FE1B7E /* InputComponent.swift */; };
+		22CEC17829A7FB4800FE1B7E /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CEC17729A7FB4800FE1B7E /* String+Extension.swift */; };
+		22EDED3A29ABBE2D002440C3 /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EDED3929ABBE2D002440C3 /* PrimaryButtonStyle.swift */; };
 		FA62058A29A1269F00C6E0F5 /* HomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62058929A1269F00C6E0F5 /* HomeApp.swift */; };
 		FA62058C29A1269F00C6E0F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62058B29A1269F00C6E0F5 /* ContentView.swift */; };
 		FA62058E29A126A800C6E0F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA62058D29A126A800C6E0F5 /* Assets.xcassets */; };
@@ -23,6 +33,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		222EAB1529AC0765009FC431 /* LoadingModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingModifier.swift; sourceTree = "<group>"; };
+		2233402729A9161A005BEF69 /* TextAnimationViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TextAnimationViewModifier.swift; path = Home/Modifier/TextAnimationViewModifier.swift; sourceTree = SOURCE_ROOT; };
+		229D04C129A8F38800276D5A /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		22ABE52829A2D02700986EB0 /* AnimatedBlobComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedBlobComponent.swift; sourceTree = "<group>"; };
+		22ABE52A29A67B6D00986EB0 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		22CEC16B29A7F74300FE1B7E /* Color+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+extension.swift"; sourceTree = "<group>"; };
+		22CEC16C29A7F74300FE1B7E /* View+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "View+Extension.swift"; path = "../../../../Desktop/SocialMedia/SocialMedia/View/Helpers/View+Extension.swift"; sourceTree = "<group>"; };
+		22CEC17129A7F90500FE1B7E /* InputComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputComponent.swift; sourceTree = "<group>"; };
+		22CEC17729A7FB4800FE1B7E /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		22EDED3929ABBE2D002440C3 /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
 		FA62058629A1269F00C6E0F5 /* Home.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Home.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA62058929A1269F00C6E0F5 /* HomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeApp.swift; sourceTree = "<group>"; };
 		FA62058B29A1269F00C6E0F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +71,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2233402629A915FD005BEF69 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				2233402729A9161A005BEF69 /* TextAnimationViewModifier.swift */,
+				22EDED3929ABBE2D002440C3 /* PrimaryButtonStyle.swift */,
+				222EAB1529AC0765009FC431 /* LoadingModifier.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
+		229D04C329A8F38C00276D5A /* Authentification */ = {
+			isa = PBXGroup;
+			children = (
+				FAE1292F29A179D000FAA2A0 /* AuthentificationView.swift */,
+				229D04C129A8F38800276D5A /* RegisterView.swift */,
+				22ABE52A29A67B6D00986EB0 /* LoginView.swift */,
+			);
+			path = Authentification;
+			sourceTree = "<group>";
+		};
+		22CEC16829A7F6FC00FE1B7E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				22CEC16B29A7F74300FE1B7E /* Color+extension.swift */,
+				22CEC16C29A7F74300FE1B7E /* View+Extension.swift */,
+				22CEC17729A7FB4800FE1B7E /* String+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		22FFFD1B29A2CC22009AD119 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				22ABE52829A2D02700986EB0 /* AnimatedBlobComponent.swift */,
+				22CEC17129A7F90500FE1B7E /* InputComponent.swift */,
+			);
+			name = Component;
+			path = View;
+			sourceTree = "<group>";
+		};
 		FA62057D29A1269E00C6E0F5 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +130,9 @@
 		FA62058829A1269F00C6E0F5 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				2233402629A915FD005BEF69 /* Modifier */,
+				22CEC16829A7F6FC00FE1B7E /* Extension */,
+				22FFFD1B29A2CC22009AD119 /* Component */,
 				FA62059A29A1301900C6E0F5 /* View */,
 				FA62059729A12F6200C6E0F5 /* Controller */,
 				FA62058929A1269F00C6E0F5 /* HomeApp.swift */,
@@ -101,8 +164,8 @@
 		FA62059A29A1301900C6E0F5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				229D04C329A8F38C00276D5A /* Authentification */,
 				FA62059B29A1303100C6E0F5 /* RoomCaptureView.swift */,
-				FAE1292F29A179D000FAA2A0 /* AuthentificationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -190,10 +253,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA62059C29A1303100C6E0F5 /* RoomCaptureView.swift in Sources */,
+				22CEC17029A7F74300FE1B7E /* View+Extension.swift in Sources */,
+				229D04C229A8F38800276D5A /* RegisterView.swift in Sources */,
+				22ABE52B29A67B6D00986EB0 /* LoginView.swift in Sources */,
+				22ABE52929A2D02700986EB0 /* AnimatedBlobComponent.swift in Sources */,
+				22CEC17829A7FB4800FE1B7E /* String+Extension.swift in Sources */,
+				22EDED3A29ABBE2D002440C3 /* PrimaryButtonStyle.swift in Sources */,
 				FA62058C29A1269F00C6E0F5 /* ContentView.swift in Sources */,
 				FA62059929A12F6D00C6E0F5 /* RoomCaptureController.swift in Sources */,
+				2233402829A9161A005BEF69 /* TextAnimationViewModifier.swift in Sources */,
 				FAE1293029A179D000FAA2A0 /* AuthentificationView.swift in Sources */,
+				22CEC16F29A7F74300FE1B7E /* Color+extension.swift in Sources */,
 				FA62058A29A1269F00C6E0F5 /* HomeApp.swift in Sources */,
+				222EAB1629AC0765009FC431 /* LoadingModifier.swift in Sources */,
+				22CEC17229A7F90500FE1B7E /* InputComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,7 +406,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Home/Home.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Home/Preview Content\"";
@@ -364,7 +436,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Home/Home.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Home/Preview Content\"";

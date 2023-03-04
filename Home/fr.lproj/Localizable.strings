@@ -1,3 +1,19 @@
+"authentification_title" = ".Home";
+"authentification_description" = "Contrôlez votre maison";
+"authentification_action_connect" = "Connexion";
+"authentification_action_register" = "Inscription";
+
+"login_email_field" = "E-mail";
+"login_password_field" = "Mot de passe";
+"login_title" = "Connexion";
+"login_action_login" = "Se connecter";
+
+"register_firstname_field" = "Prénom";
+"register_lastname_field" = "Nom de famille";
+"register_email_field" = "Email";
+"register_password_field" = "Mot de passe";
+"register_action_register" = "S'inscrire";
+
 "roomplan_title" = "Créer votre maison";
 "roomplan_description" = "Scannez votre maison en pointant la caméra sur toutes les surfaces.";
 "roomplan_action_start" = "Démarrer";
@@ -7,3 +23,4 @@
 
 "cancel" = "Annuler";
 "done" = "Fait";
+"loading" = "Chargement";
