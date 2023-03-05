@@ -7,26 +7,14 @@
 
 import SwiftUI
 
-struct InputValidator {
-	var message: String
-	var regex: Regex<Any>
-}
-
 struct InputComponent<Content: View>: View {
 	var icon: String
 	var field: Content
-	var validators: [InputValidator] = []
-	
-	
+
 	enum FocusedField {
 		case field
 	}
 	@FocusState private var focusedField: FocusedField?
-	
-	init(icon: String, validators: [InputValidator], @ViewBuilder field: () -> Content) {
-		self.init(icon: icon, field: field)
-		self.validators = validators
-	}
 	
 	init(icon: String, @ViewBuilder field: () -> Content) {
 		self.field = field()
@@ -48,7 +36,7 @@ struct InputComponent<Content: View>: View {
 				
 		}
 		.frame(height: 50)
-		.background(Color.accentColor)
+        .background(Color.accentColor)
 		.overlay {
 			RoundedRectangle(cornerRadius: 8)
 				.strokeBorder(Color.accentColor, lineWidth: 2)
@@ -62,8 +50,8 @@ struct InputComponent<Content: View>: View {
 
 struct InputComponent_Previews: PreviewProvider {
 	static var previews: some View {
-		InputComponent(icon: "star", validators: [InputValidator(message: "message", regex: Regex(/(\w+)\s+(\d+)/))]) {
-			TextField("demo", text: .constant(""))
+        InputComponent(icon: "house") {
+			TextField("InputComponent", text: .constant(""))
 		}
 		.padding()
 		.previewLayout(.sizeThatFits)

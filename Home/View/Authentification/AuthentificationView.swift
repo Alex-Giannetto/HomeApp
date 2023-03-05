@@ -12,6 +12,7 @@ struct AuthentificationView: View {
     @State private var animation: Bool = false
     @State private var showLoginSheet: Bool = false
 	@State private var showRegisterSheet: Bool = false
+	@State private var showRoomScannerSheet: Bool = false
 	@State private var isLoading: Bool = false
     
     var body: some View {
@@ -59,10 +60,13 @@ struct AuthentificationView: View {
 					.presentationDragIndicator(.visible)
             }
 			.sheet(isPresented: $showRegisterSheet) {
-				RegisterView(isLoading: $isLoading)
+				RegisterView(isLoading: $isLoading, showRoomScannerSheet: $showRoomScannerSheet)
 					.presentationDetents([.height(400)])
 					.interactiveDismissDisabled(isLoading)
 					.presentationDragIndicator(.visible)
+			}
+			.fullScreenCover(isPresented: $showRoomScannerSheet) {
+				RoomPlanView()
 			}
         }
     }

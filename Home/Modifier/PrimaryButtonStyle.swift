@@ -33,7 +33,7 @@ struct PrimaryButtonStyle: ButtonStyle {
 				.shadow(radius: 10)
 				.scaleEffect(configuration.isPressed ? 0.9 : 1)
 				.animation(.spring(response: 0.4, dampingFraction: 0.6), value: configuration.isPressed)
-				.foregroundColor(isEnabled ? .white : .primary)
+				.foregroundColor(isEnabled ? .white : .secondary)
 		}
 	}
 }

@@ -13,8 +13,6 @@
 		22ABE52929A2D02700986EB0 /* AnimatedBlobComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ABE52829A2D02700986EB0 /* AnimatedBlobComponent.swift */; };
 		22ABE52B29A67B6D00986EB0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ABE52A29A67B6D00986EB0 /* LoginView.swift */; };
 		22CEC16F29A7F74300FE1B7E /* Color+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CEC16B29A7F74300FE1B7E /* Color+extension.swift */; };
-		22CEC17029A7F74300FE1B7E /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CEC16C29A7F74300FE1B7E /* View+Extension.swift */; };
-		22CEC17229A7F90500FE1B7E /* InputComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CEC17129A7F90500FE1B7E /* InputComponent.swift */; };
 		22CEC17829A7FB4800FE1B7E /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CEC17729A7FB4800FE1B7E /* String+Extension.swift */; };
 		22EDED3A29ABBE2D002440C3 /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EDED3929ABBE2D002440C3 /* PrimaryButtonStyle.swift */; };
 		FA62058A29A1269F00C6E0F5 /* HomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62058929A1269F00C6E0F5 /* HomeApp.swift */; };
@@ -24,6 +22,8 @@
 		FA62059929A12F6D00C6E0F5 /* RoomCaptureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62059829A12F6D00C6E0F5 /* RoomCaptureController.swift */; };
 		FA62059C29A1303100C6E0F5 /* RoomCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62059B29A1303100C6E0F5 /* RoomCaptureView.swift */; };
 		FA6205A029A1330000C6E0F5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA6205A229A1330000C6E0F5 /* Localizable.strings */; };
+		FAC6EE2429B3B39A00D97253 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC6EE2329B3B39A00D97253 /* View+Extension.swift */; };
+		FACB5FD629B3F602005E9696 /* InputComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB5FD529B3F602005E9696 /* InputComponent.swift */; };
 		FAE1292529A1783E00FAA2A0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAE1292429A1783E00FAA2A0 /* GoogleService-Info.plist */; };
 		FAE1292829A1796E00FAA2A0 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FAE1292729A1796E00FAA2A0 /* FirebaseAuth */; };
 		FAE1292A29A1796E00FAA2A0 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FAE1292929A1796E00FAA2A0 /* FirebaseFirestore */; };
@@ -39,8 +39,6 @@
 		22ABE52829A2D02700986EB0 /* AnimatedBlobComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedBlobComponent.swift; sourceTree = "<group>"; };
 		22ABE52A29A67B6D00986EB0 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		22CEC16B29A7F74300FE1B7E /* Color+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+extension.swift"; sourceTree = "<group>"; };
-		22CEC16C29A7F74300FE1B7E /* View+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "View+Extension.swift"; path = "../../../../Desktop/SocialMedia/SocialMedia/View/Helpers/View+Extension.swift"; sourceTree = "<group>"; };
-		22CEC17129A7F90500FE1B7E /* InputComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputComponent.swift; sourceTree = "<group>"; };
 		22CEC17729A7FB4800FE1B7E /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		22EDED3929ABBE2D002440C3 /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
 		FA62058629A1269F00C6E0F5 /* Home.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Home.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +50,8 @@
 		FA62059B29A1303100C6E0F5 /* RoomCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCaptureView.swift; sourceTree = "<group>"; };
 		FA6205A129A1330000C6E0F5 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FA6205A329A1330300C6E0F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FAC6EE2329B3B39A00D97253 /* View+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		FACB5FD529B3F602005E9696 /* InputComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputComponent.swift; sourceTree = "<group>"; };
 		FAE1292429A1783E00FAA2A0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FAE1292F29A179D000FAA2A0 /* AuthentificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthentificationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				22CEC16B29A7F74300FE1B7E /* Color+extension.swift */,
-				22CEC16C29A7F74300FE1B7E /* View+Extension.swift */,
+				FAC6EE2329B3B39A00D97253 /* View+Extension.swift */,
 				22CEC17729A7FB4800FE1B7E /* String+Extension.swift */,
 			);
 			path = Extension;
@@ -104,8 +104,8 @@
 		22FFFD1B29A2CC22009AD119 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				FACB5FD529B3F602005E9696 /* InputComponent.swift */,
 				22ABE52829A2D02700986EB0 /* AnimatedBlobComponent.swift */,
-				22CEC17129A7F90500FE1B7E /* InputComponent.swift */,
 			);
 			name = Component;
 			path = View;
@@ -253,20 +253,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA62059C29A1303100C6E0F5 /* RoomCaptureView.swift in Sources */,
-				22CEC17029A7F74300FE1B7E /* View+Extension.swift in Sources */,
 				229D04C229A8F38800276D5A /* RegisterView.swift in Sources */,
 				22ABE52B29A67B6D00986EB0 /* LoginView.swift in Sources */,
 				22ABE52929A2D02700986EB0 /* AnimatedBlobComponent.swift in Sources */,
 				22CEC17829A7FB4800FE1B7E /* String+Extension.swift in Sources */,
 				22EDED3A29ABBE2D002440C3 /* PrimaryButtonStyle.swift in Sources */,
+				FACB5FD629B3F602005E9696 /* InputComponent.swift in Sources */,
 				FA62058C29A1269F00C6E0F5 /* ContentView.swift in Sources */,
+				FAC6EE2429B3B39A00D97253 /* View+Extension.swift in Sources */,
 				FA62059929A12F6D00C6E0F5 /* RoomCaptureController.swift in Sources */,
 				2233402829A9161A005BEF69 /* TextAnimationViewModifier.swift in Sources */,
 				FAE1293029A179D000FAA2A0 /* AuthentificationView.swift in Sources */,
 				22CEC16F29A7F74300FE1B7E /* Color+extension.swift in Sources */,
 				FA62058A29A1269F00C6E0F5 /* HomeApp.swift in Sources */,
 				222EAB1629AC0765009FC431 /* LoadingModifier.swift in Sources */,
-				22CEC17229A7F90500FE1B7E /* InputComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,9 @@ import SwiftUI
 
 struct RegisterView: View {
 	@Binding public var isLoading: Bool
+	@Binding public var showRoomScannerSheet: Bool
+	
+	@Environment(\.dismiss) var dismiss
 	
 	@State private var appear: Bool = false
 	
@@ -78,6 +81,12 @@ struct RegisterView: View {
 		withAnimation {
 			isLoading = true
 		}
+		
+		DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+			isLoading = false
+			dismiss()
+			showRoomScannerSheet = true
+		}
 	}
 	
 	
@@ -85,6 +94,6 @@ struct RegisterView: View {
 
 struct RegisterView_Previews: PreviewProvider {
 	static var previews: some View {
-		RegisterView(isLoading: .constant(false))
+		RegisterView(isLoading: .constant(false), showRoomScannerSheet: .constant(false))
 	}
 }
