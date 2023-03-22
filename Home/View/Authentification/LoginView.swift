@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseFirestore
 
 struct LoginView: View {
 	@Binding public var isLoading: Bool
 	
 	@State private var email: String = ""
 	@State private var password: String = ""
+	
+	@AppStorage(storageUser.uuid.rawValue) var userUID: String = ""
+	@AppStorage(storageUser.email.rawValue) private var userEmail: String = ""
+	@AppStorage(storageUser.firstname.rawValue) private var userFirstName: String = ""
 
 	
 	var body: some View {
@@ -57,6 +63,19 @@ struct LoginView: View {
 		withAnimation {
 			isLoading = true
 		}
+		
+		var _ = Auth.auth().signIn(withEmail: email, password: password)
+	}
+	
+	func fetchUser() async throws {
+		guard let userID = Auth.auth().currentUser?.uid else {return}
+		let user = try await Firestore.firestore().collection("Users").document(userID).getDocument(as: User.self)
+			
+		await MainActor.run(body: {
+			userUID = userID
+			userEmail = user.email
+			userFirstName = user.firstname
+		})
 	}
 }
 

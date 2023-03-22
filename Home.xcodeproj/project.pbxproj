@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		222EAB1629AC0765009FC431 /* LoadingModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222EAB1529AC0765009FC431 /* LoadingModifier.swift */; };
 		2233402829A9161A005BEF69 /* TextAnimationViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233402729A9161A005BEF69 /* TextAnimationViewModifier.swift */; };
+		223406B629B6116F0095D8AB /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223406B529B6116F0095D8AB /* Dashboard.swift */; };
+		22425DEB29B4FA97007C408E /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22425DEA29B4FA97007C408E /* UserModel.swift */; };
 		229D04C229A8F38800276D5A /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229D04C129A8F38800276D5A /* RegisterView.swift */; };
 		22ABE52929A2D02700986EB0 /* AnimatedBlobComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ABE52829A2D02700986EB0 /* AnimatedBlobComponent.swift */; };
 		22ABE52B29A67B6D00986EB0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ABE52A29A67B6D00986EB0 /* LoginView.swift */; };
@@ -35,6 +37,8 @@
 /* Begin PBXFileReference section */
 		222EAB1529AC0765009FC431 /* LoadingModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingModifier.swift; sourceTree = "<group>"; };
 		2233402729A9161A005BEF69 /* TextAnimationViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TextAnimationViewModifier.swift; path = Home/Modifier/TextAnimationViewModifier.swift; sourceTree = SOURCE_ROOT; };
+		223406B529B6116F0095D8AB /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
+		22425DEA29B4FA97007C408E /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		229D04C129A8F38800276D5A /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		22ABE52829A2D02700986EB0 /* AnimatedBlobComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedBlobComponent.swift; sourceTree = "<group>"; };
 		22ABE52A29A67B6D00986EB0 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -79,6 +83,14 @@
 				222EAB1529AC0765009FC431 /* LoadingModifier.swift */,
 			);
 			path = Modifier;
+			sourceTree = "<group>";
+		};
+		22425DE929B4FA87007C408E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22425DEA29B4FA97007C408E /* UserModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		229D04C329A8F38C00276D5A /* Authentification */ = {
@@ -130,6 +142,7 @@
 		FA62058829A1269F00C6E0F5 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				22425DE929B4FA87007C408E /* Model */,
 				2233402629A915FD005BEF69 /* Modifier */,
 				22CEC16829A7F6FC00FE1B7E /* Extension */,
 				22FFFD1B29A2CC22009AD119 /* Component */,
@@ -166,6 +179,7 @@
 			children = (
 				229D04C329A8F38C00276D5A /* Authentification */,
 				FA62059B29A1303100C6E0F5 /* RoomCaptureView.swift */,
+				223406B529B6116F0095D8AB /* Dashboard.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -256,12 +270,14 @@
 				229D04C229A8F38800276D5A /* RegisterView.swift in Sources */,
 				22ABE52B29A67B6D00986EB0 /* LoginView.swift in Sources */,
 				22ABE52929A2D02700986EB0 /* AnimatedBlobComponent.swift in Sources */,
+				223406B629B6116F0095D8AB /* Dashboard.swift in Sources */,
 				22CEC17829A7FB4800FE1B7E /* String+Extension.swift in Sources */,
 				22EDED3A29ABBE2D002440C3 /* PrimaryButtonStyle.swift in Sources */,
 				FACB5FD629B3F602005E9696 /* InputComponent.swift in Sources */,
 				FA62058C29A1269F00C6E0F5 /* ContentView.swift in Sources */,
 				FAC6EE2429B3B39A00D97253 /* View+Extension.swift in Sources */,
 				FA62059929A12F6D00C6E0F5 /* RoomCaptureController.swift in Sources */,
+				22425DEB29B4FA97007C408E /* UserModel.swift in Sources */,
 				2233402829A9161A005BEF69 /* TextAnimationViewModifier.swift in Sources */,
 				FAE1293029A179D000FAA2A0 /* AuthentificationView.swift in Sources */,
 				22CEC16F29A7F74300FE1B7E /* Color+extension.swift in Sources */,
@@ -489,8 +505,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
+				branch = master;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

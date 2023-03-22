@@ -6,6 +6,8 @@
 	//
 
 import SwiftUI
+import Firebase
+import FirebaseFirestore
 
 struct RegisterView: View {
 	@Binding public var isLoading: Bool
@@ -19,6 +21,14 @@ struct RegisterView: View {
 	@State private var lastName: String = ""
 	@State private var email: String = ""
 	@State private var password: String = ""
+	
+	@AppStorage(storageUser.uuid.rawValue) var userUID: String = ""
+	@AppStorage(storageUser.email.rawValue) private var userEmail: String = ""
+	@AppStorage(storageUser.firstname.rawValue) private var userFirstName: String = ""
+	
+	@State private var errorMessage: String = ""
+	@State private var showError: Bool = false
+
 	
 	var body: some View {
 		VStack {
@@ -60,10 +70,14 @@ struct RegisterView: View {
 			}
 			.buttonStyle(PrimaryButtonStyle())
 			.disabled(!formIsValid())
+			.padding(.bottom)
 		}
 		.padding([.horizontal, .top])
 		.background(.gray.opacity(0.1))
 		.modifier(LoadingModifier(isLoading: isLoading))
+		.alert(errorMessage, isPresented: $showError) {
+			Button("retry") {}
+		}
 		
 	}
 	
@@ -81,15 +95,28 @@ struct RegisterView: View {
 		withAnimation {
 			isLoading = true
 		}
-		
-		DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-			isLoading = false
-			dismiss()
-			showRoomScannerSheet = true
+
+		Task {
+			do {
+				// Step 1: Creating Firebase Account
+				try await Auth.auth().createUser(withEmail: email, password: password)
+				guard let userUID = Auth.auth().currentUser?.uid else {return}
+				let user = User(firstname: firstName, lastname: lastName, email: email)
+				let _ = try Firestore.firestore().collection("Users").document(userUID).setData(from: user, completion: { error in
+					self.userUID = userUID
+					self.userFirstName = firstName
+					self.userEmail = email
+					self.isLoading = false
+					dismiss()
+				})
+			} catch {
+				print("Error during creating account : \(error)")
+				errorMessage = error.localizedDescription
+				showError = true
+				isLoading = false
+			}
 		}
 	}
-	
-	
 }
 
 struct RegisterView_Previews: PreviewProvider {

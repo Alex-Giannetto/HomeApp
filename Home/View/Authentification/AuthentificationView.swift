@@ -14,6 +14,9 @@ struct AuthentificationView: View {
 	@State private var showRegisterSheet: Bool = false
 	@State private var showRoomScannerSheet: Bool = false
 	@State private var isLoading: Bool = false
+	
+	@AppStorage(storageUser.uuid.rawValue) var userUID: String = ""
+	
     
     var body: some View {
         ZStack {
@@ -65,8 +68,9 @@ struct AuthentificationView: View {
 					.interactiveDismissDisabled(isLoading)
 					.presentationDragIndicator(.visible)
 			}
-			.fullScreenCover(isPresented: $showRoomScannerSheet) {
-				RoomPlanView()
+			.onChange(of: userUID) { newValue in
+				guard !newValue.isEmpty else { return }
+				
 			}
         }
     }

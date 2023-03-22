@@ -8,15 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    @AppStorage("home_usdz_path") var homeUSDZPath: String?
+	@AppStorage(storageUser.uuid.rawValue) var userUID: String = ""
     
     var body: some View {
         VStack {
-            if homeUSDZPath != nil {
-                Text("You have your home already scanned")
-                RoomPlanView()
+			if userUID.isEmpty {
+				AuthentificationView()
             } else {
-                AuthentificationView()
+				Dashboard()
             }
         }
     }
