@@ -1,3 +1,20 @@
+"authentification_title" = ".Home";
+"authentification_description" = "Control your home";
+"authentification_action_connect" = "Login";
+"authentification_action_register" = "Register";
+
+"login_email_field" = "Mail";
+"login_password_field" = "Password";
+"login_title" = "Login";
+"login_action_login" = "Login";
+
+"register_firstname_field" = "Firstname";
+"register_lastname_field" = "Lastname";
+"register_email_field" = "Email";
+"register_password_field" = "Password";
+"register_action_register" = "Register";
+
+
 "roomplan_title" = "Create your home";
 "roomplan_description" = "Scan your home by pointing the camera at all surfaces.";
 "roomplan_action_start" = "Start";
@@ -7,3 +24,6 @@
 
 "cancel" = "Cancel";
 "done" = "Done";
+"loading" = "Loading";
+"retry" = "Retry";
+"close" = "Close";
