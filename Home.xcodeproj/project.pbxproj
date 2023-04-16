@@ -25,7 +25,7 @@
 		FA62059C29A1303100C6E0F5 /* RoomCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62059B29A1303100C6E0F5 /* RoomCaptureView.swift */; };
 		FA6205A029A1330000C6E0F5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA6205A229A1330000C6E0F5 /* Localizable.strings */; };
 		FAC6EE2429B3B39A00D97253 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC6EE2329B3B39A00D97253 /* View+Extension.swift */; };
-		FACB5FD629B3F602005E9696 /* InputComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB5FD529B3F602005E9696 /* InputComponent.swift */; };
+		FACB5FD629B3F602005E9696 /* CustomTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB5FD529B3F602005E9696 /* CustomTextFieldStyle.swift */; };
 		FAE1292529A1783E00FAA2A0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAE1292429A1783E00FAA2A0 /* GoogleService-Info.plist */; };
 		FAE1292829A1796E00FAA2A0 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FAE1292729A1796E00FAA2A0 /* FirebaseAuth */; };
 		FAE1292A29A1796E00FAA2A0 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FAE1292929A1796E00FAA2A0 /* FirebaseFirestore */; };
@@ -55,7 +55,7 @@
 		FA6205A129A1330000C6E0F5 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FA6205A329A1330300C6E0F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FAC6EE2329B3B39A00D97253 /* View+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
-		FACB5FD529B3F602005E9696 /* InputComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputComponent.swift; sourceTree = "<group>"; };
+		FACB5FD529B3F602005E9696 /* CustomTextFieldStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextFieldStyle.swift; sourceTree = "<group>"; };
 		FAE1292429A1783E00FAA2A0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FAE1292F29A179D000FAA2A0 /* AuthentificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthentificationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +80,7 @@
 			children = (
 				2233402729A9161A005BEF69 /* TextAnimationViewModifier.swift */,
 				22EDED3929ABBE2D002440C3 /* PrimaryButtonStyle.swift */,
+				FACB5FD529B3F602005E9696 /* CustomTextFieldStyle.swift */,
 				222EAB1529AC0765009FC431 /* LoadingModifier.swift */,
 			);
 			path = Modifier;
@@ -116,7 +117,6 @@
 		22FFFD1B29A2CC22009AD119 /* Component */ = {
 			isa = PBXGroup;
 			children = (
-				FACB5FD529B3F602005E9696 /* InputComponent.swift */,
 				22ABE52829A2D02700986EB0 /* AnimatedBlobComponent.swift */,
 			);
 			name = Component;
@@ -273,7 +273,7 @@
 				223406B629B6116F0095D8AB /* Dashboard.swift in Sources */,
 				22CEC17829A7FB4800FE1B7E /* String+Extension.swift in Sources */,
 				22EDED3A29ABBE2D002440C3 /* PrimaryButtonStyle.swift in Sources */,
-				FACB5FD629B3F602005E9696 /* InputComponent.swift in Sources */,
+				FACB5FD629B3F602005E9696 /* CustomTextFieldStyle.swift in Sources */,
 				FA62058C29A1269F00C6E0F5 /* ContentView.swift in Sources */,
 				FAC6EE2429B3B39A00D97253 /* View+Extension.swift in Sources */,
 				FA62059929A12F6D00C6E0F5 /* RoomCaptureController.swift in Sources */,

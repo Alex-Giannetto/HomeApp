@@ -35,31 +35,27 @@ struct RegisterView: View {
 			ScrollView {
 				VStack {
 					Group {
-						InputComponent(icon: "person") {
-							TextField("register_firstname_field", text: $firstName)
-								.textContentType(.givenName)
-						}
-						.padding(.top)
+						TextField("register_firstname_field", text: $firstName)
+							.textFieldStyle(CustomTextFieldStyle(icon: "person"))
+							.textContentType(.givenName)
+							.padding(.top)
 						
-						InputComponent(icon: "person") {
-							TextField("register_lastname_field", text: $lastName)
-								.textContentType(.familyName)
-						}
+						TextField("register_lastname_field", text: $lastName)
+							.textFieldStyle(CustomTextFieldStyle(icon: "person"))
+							.textContentType(.familyName)
 						
-						InputComponent(icon: "at") {
-							TextField("register_email_field", text: $email)
-								.keyboardType(.emailAddress)
-								.textContentType(.emailAddress)
-								.autocapitalization(.none)
-								.disableAutocorrection(true)
-						}
 						
-						InputComponent(icon: "lock") {
-							SecureField("register_password_field", text: $password)
-								.autocapitalization(.none)
-								.disableAutocorrection(true)
-						}
+						TextField("register_email_field", text: $email)
+							.textFieldStyle(CustomTextFieldStyle(icon: "at"))
+							.keyboardType(.emailAddress)
+							.textContentType(.emailAddress)
+							.autocapitalization(.none)
+							.disableAutocorrection(true)
 						
+						SecureField("register_password_field", text: $password)
+							.textFieldStyle(CustomTextFieldStyle(icon: "lock"))
+							.autocapitalization(.none)
+							.disableAutocorrection(true)
 					}
 					.padding(.bottom)
 				}
@@ -76,21 +72,27 @@ struct RegisterView: View {
 		.background(.gray.opacity(0.1))
 		.modifier(LoadingModifier(isLoading: isLoading))
 		.alert(errorMessage, isPresented: $showError) {
-			Button("retry") {}
+			Button("close") {}
 		}
 		
 	}
 	
 	private func formIsValid() -> Bool {
-		return !firstName.isEmpty
-		&& !lastName.isEmpty
-		&& !email.isEmpty
-		&& email.isValidEmail()
-		&& !password.isEmpty
-		&& password.isValidPassword()
+		let conditions  = [
+			!firstName.isEmpty,
+			!lastName.isEmpty,
+			!email.isEmpty,
+			email.isValidEmail(),
+			!password.isEmpty,
+			password.isValidPassword()
+		]
+		
+		return conditions.allSatisfy { $0 }
 	}
 	
 	private func submit() -> Void {
+		guard formIsValid() else { return }
+		
 		closeKeyboard()
 		withAnimation {
 			isLoading = true

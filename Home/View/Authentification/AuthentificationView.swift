@@ -76,6 +76,8 @@ struct AuthentificationView: View {
     }
 }
 
+
+
 struct AuthentificationView_Previews: PreviewProvider {
     static var previews: some View {
         AuthentificationView()

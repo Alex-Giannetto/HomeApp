@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
 	@AppStorage(storageUser.uuid.rawValue) var userUID: String = ""
-    
+
     var body: some View {
         VStack {
 			if userUID.isEmpty {
